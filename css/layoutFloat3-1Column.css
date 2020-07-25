@@ -1,0 +1,84 @@
+
+
+/** Header Template Styling **/
+header {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Horizontal Navigation Styling */
+.horizontal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #333;      /* Set gray background color */   
+}
+
+.horizontal li {
+    float: left;
+}
+
+.horizontal li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.horizontal li a:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.horizontal .active {
+    background-color: #4CAF50;        /* Change link background color for active page using class */
+}
+
+.horizontal #navRightAlign {
+    float: right;                       /* Move nav item off to far right of nav bar */
+}
+
+
+/** Main content layout styling - 3 columns to 1 column for small screen using float **/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 20px 30px;
+}
+
+/* Left and right sides */
+.column.side {
+    width: 20%;
+}
+
+/* Middle content */
+.column.middle {
+    width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other for small screen */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}

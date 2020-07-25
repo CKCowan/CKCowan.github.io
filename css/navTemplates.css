@@ -1,0 +1,146 @@
+
+
+
+
+
+
+
+
+
+
+/************** Navigation Bar Styling **********************/
+/* Horizontal Navigation Styling */
+.horizontal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #333;      /* Set gray background color */   
+}
+
+/*** "Floating" ***/
+.horizontal li {
+    float: left;
+}
+
+.horizontal li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.horizontal li a:hover {
+    background-color: #111;
+}
+
+.horizontal .active {
+    background-color: #4CAF50;        /* Change link background color for active page using class */
+}
+
+.horizontal #navRightAlign {
+    float: right;                       /* Move nav item off to far right of nav bar */
+}
+
+
+
+/*** "Dropdown" ***/
+
+.dropdownNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #333;      /* Set gray background color */   
+}
+
+.dropdownNav li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdownNav li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(166, 182, 187, 0.815);
+}
+
+.dropdownNav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(166, 182, 187, 0.815);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdownNav .active {
+    background-color: rgb(14, 148, 182);        /* Change link background color for active page using class */
+}
+
+
+
+/*** Vertical Navigation Styling ***/
+.vertical ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;                      /* Block elements take up full width available by default; reduce to 60px */ 
+    background-color: #f1f1f1;      /* Set gray background color */   
+}
+
+.vertical li {
+    text-align: center;               /* Center links */
+}
+
+
+.vertical li a {
+    display: block;                   /* Makes whole link area clickable, not just the text */
+    color: #000;                    /* Set link text color to black */
+    padding: 8px 16px;                /* Set padding */
+    text-decoration: none;            /* Remove underline from link */
+}
+
+.vertical li a:hover {
+    background-color: #555;         /* Change link background color on hover */
+    color: white;                   /* Change link text color on hover */
+}
+
+.vertical .active {
+    background-color: #4CAF50;      /* Change link background color for active page using class */
+    color: white;                   /* Change link text color for active page using class */
+}
+
+
+
+
+
+
